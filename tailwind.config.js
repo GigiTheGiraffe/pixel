@@ -8,6 +8,9 @@ export default {
     extend: {
       colors: {
         "black": "#060606"
+      },
+      fontSize: {
+        "2xs": ".625rem"
       }
     },
   },

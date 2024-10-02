@@ -12,12 +12,12 @@
         <a href='/'>
             <img src=" {{ Vite::asset('resources/images/logo.svg')}}" alt="logo of Pixel">
         </a>
-        <ol class='space-x-6 font-bold'>
+        <ul class='space-x-6 font-bold list-none'>
             <a href=''>Jobs</a>
             <a href=''>Careers</a>
             <a href=''>Salaries</a>
             <a href=''>Company</a>
-        </ol>
+        </ul>
         <a href=''>Post a Job</a>
     </nav>
 
