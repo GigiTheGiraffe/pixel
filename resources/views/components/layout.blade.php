@@ -8,19 +8,20 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 <body class="px-10 bg-black text-white">
-    <nav class="flex justify-between items-center py-4 border-b border-white/20">
-        <a href='/'>
-            <img src=" {{ Vite::asset('resources/images/logo.svg')}}" alt="logo of Pixel">
-        </a>
-        <ul class='space-x-6 font-bold list-none'>
-            <a href=''>Jobs</a>
-            <a href=''>Careers</a>
-            <a href=''>Salaries</a>
-            <a href=''>Company</a>
-        </ul>
-        <a href=''>Post a Job</a>
-    </nav>
-
+    <header>
+        <nav class="flex justify-between items-center py-4 border-b border-white/20">
+            <a href='/'>
+                <img src=" {{ Vite::asset('resources/images/logo.svg')}}" alt="logo of Pixel">
+            </a>
+            <ul class='space-x-6 font-bold list-none'>
+                <li><a href=''>Jobs</a></li>
+                <li><a href=''>Careers</a></li>
+                <li><a href=''>Salaries</a></li>
+                <li><a href=''>Company</a></li>
+            </ul>
+            <a href=''>Post a Job</a>
+        </nav>
+    </header>
     <main class="mt-10 max-w-[986px] mx-auto">
         {{ $slot }}
     </main>

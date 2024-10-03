@@ -1,3 +1,5 @@
+@props([$job])
+
 <x-panel class="flex flex-row gap-x-5">
     <x-employer-logo></x-employer-logo>
     <div class="font-bold flex-1 flex flex-col">
@@ -6,9 +8,8 @@
         <p class="text-sm text-gray-400 mt-auto">Full Time - From 300,00€</p>
     </div>
     <ol class="flex list-none items-center">
-        <li><x-tag size='small'>Tag</x-tag></li>
-        <li><x-tag size='small'>Tag</x-tag></li>
-        <li><x-tag size='small'>Tag</x-tag></li>
-        <li><x-tag size='small'>Tag</x-tag></li>
+        @foreach ($job->tags as $tag)
+            <li><x-tag :$tag>Backend</x-tag></li>
+        @endforeach
     </ol>
 </x-panel>

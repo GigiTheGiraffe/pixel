@@ -1,3 +1,5 @@
+@props([$job])
+
 <x-panel>
     <h3 class="self-start text-sm">Laracrew</h3>
     <div class="py-8 text-center">
@@ -6,9 +8,9 @@
     </div>
     <div class='flex justify-between items-center mt-auto'>
     <ul class="flex list-none gap-2">
-        <li><x-tag size='small'>Backend</x-tag></li>
-        <li><x-tag size='small'>Frontend</x-tag></li>
-        <li><x-tag size='small'>Fullstack</x-tag></li>
+        @foreach ($job->tags as $tag)
+            <li><x-tag :$tag size='small'>Backend</x-tag></li>
+        @endforeach
     </ul>
     <x-employer-logo :width="42"></x-employer-logo>
 </div>
