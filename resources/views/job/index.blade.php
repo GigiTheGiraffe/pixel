@@ -9,8 +9,8 @@
         <section class='pt-5'>
             <x-section-heading>Top Jobs</x-section-heading>
             <ul class="grid lg:grid-cols-3 gap-8 mt-6 list-none">
-                @foreach ($jobs as $job)
-                <li><x-job-card-wide :$job></x-job-card-wide></li>
+                @foreach ($featuredJobs as $job)
+                <li><x-job-card :job="$job"></x-job-card></li>
                 @endforeach
             </ul>
         </section>
@@ -25,7 +25,7 @@
         <section>
             <x-section-heading>Recent Jobs</x-section-heading>
             <ul class='mt-6 space-y-5 list-none'>
-                @foreach ($jobs as $job)
+                @foreach ($unfeaturedJobs as $job)
                 <li><x-job-card-wide :$job></x-job-card-wide></li>
                 @endforeach
             </ul>

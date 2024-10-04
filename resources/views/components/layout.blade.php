@@ -13,11 +13,11 @@
             <a href='/'>
                 <img src=" {{ Vite::asset('resources/images/logo.svg')}}" alt="logo of Pixel">
             </a>
-            <ul class='space-x-6 font-bold list-none'>
-                <li><a href=''>Jobs</a></li>
-                <li><a href=''>Careers</a></li>
-                <li><a href=''>Salaries</a></li>
-                <li><a href=''>Company</a></li>
+            <ul class='space-x-6 font-bold list-none flex gap-x-2'>
+                <li class='hover:underline hover:text-blue-700 transition-colors duration-300 transition-underline underline-300'><a href=''>Jobs</a></li>
+                <li class='hover:text-blue-700 transition-colors duration-300'><a href=''>Careers</a></li>
+                <li class='hover:text-blue-700 transition-colors duration-300'><a href=''>Salaries</a></li>
+                <li class='hover:text-blue-700 transition-colors duration-300'><a href=''>Company</a></li>
             </ul>
             <a href=''>Post a Job</a>
         </nav>

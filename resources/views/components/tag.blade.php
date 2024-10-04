@@ -7,7 +7,7 @@ $classes = "bg-white/10 hover:bg-white/25 rounded-xl transition-colors duration-
         $classes .= ' px-5 py-1 text-sm';
     }
 
-    if($size == 'small') {
+    if($size == "small") {
         $classes .= ' px-3 py-1 text-2xs';
     }
 @endphp

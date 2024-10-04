@@ -11,7 +11,13 @@ export default {
       },
       fontSize: {
         "2xs": ".625rem"
-      }
+      },
+      transitionProperty: {
+        'underline': 'text-decoration',
+      },
+      transitionDuration: {
+        '300': '300ms',
+      },
     },
   },
   plugins: [],
